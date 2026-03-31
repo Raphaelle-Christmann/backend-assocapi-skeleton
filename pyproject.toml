@@ -1,0 +1,20 @@
+[project]
+name = "backend-assocapi-skeleton"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Raphaëlle Christmann", email = "raphaelle.christmann@etu.minesparis.psl.eu" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.135.2",
+    "pandas>=3.0.2",
+]
+
+[project.scripts]
+backend-assocapi-skeleton = "backend_assocapi_skeleton:main"
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"
